@@ -1,0 +1,210 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+}
+
+:root {
+    --text-color: rgb(0, 0, 0);
+    --primary-color: #BDFCC9;
+    /* --primary-color: #9fffaf; */
+    --white-color: #ffffff;
+    --black-color: #000000;
+}
+
+html, body {
+    height: 100%;
+    font-family: sans-serif; /* or any other default font */
+}
+
+/* body {
+    font-family: "Poppins", system-ui;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+} */
+
+/* Reset margin and padding for all headings and paragraphs */
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent element */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Removes bottom space for inline images */
+}
+
+input, textarea, select, button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font: inherit;
+}
+
+.container {
+    width: 500px;
+    height: auto;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+#signupForm{
+    margin-left: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.termsandconditions{
+    display: flex;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+.checkbox-group .error {
+    display: block; /* Ensures the error message appears on a new line */
+    color: red;
+    font-size: 0.9em; /* Adjust as needed */
+    margin-top: 5px; /* Space above the error message */
+    margin-bottom: 20px;
+}
+
+button {
+    width: 90%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* .success-message {
+    text-align: center;
+    margin-top: 20px;
+    color: #28a745;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+} */
+
+.success-message {
+    text-align: center;
+    margin-top: 20px;
+    color: #28a745;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjusted gap for better spacing */
+    padding: 20px;
+    border: 2px solid #28a745;
+    border-radius: 8px;
+    background-color: #e9f5e9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.success-message p {
+    font-size: 1.1em;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+/* button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin: 0 auto; 
+} */
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#timerMessage {
+    font-size: 0.9em; /* Adjusted size for the timer message */
+    color: #6c757d; /* Subtle gray color */
+    margin-top: 10px; /* Add some space above the timer */
+}

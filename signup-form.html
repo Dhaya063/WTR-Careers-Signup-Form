@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WTR Careers Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your full name" required>
+                <span class="error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email address" required>
+                <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Create a password" required>
+                <span class="error" id="passwordError"></span>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                <span class="error" id="confirmPasswordError"></span>
+            </div>
+            <div class="form-group checkbox-group">
+                <div class="termsandconditions">
+                    <input type="checkbox" id="terms">
+                     <label for="terms">I agree to the Terms & Conditions</label>
+                </div>
+                <span class="error" id="termsError"></span>
+            </div>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="success-message" id="successMessage" style="display: none;">
+            <p>Thank you for signing up! Please check your email to verify your account.</p>
+            <button id="resendButton" onclick="resendCode()">Click here to resend</button>
+            <span id="timerMessage"></span> <!-- Timer is now below the button -->
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
